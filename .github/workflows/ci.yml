@@ -1,0 +1,20 @@
+name: CI Pipeline TBP
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Cek File README
+        run: test -f README.md
+
+      - name: Simulasi Automated Test
+        run: exit 1
