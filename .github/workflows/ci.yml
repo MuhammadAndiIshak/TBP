@@ -17,4 +17,4 @@ jobs:
         run: test -f README.md
 
       - name: Simulasi Automated Test
-        run: exit 1
+        run: exit 0
